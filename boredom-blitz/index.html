@@ -8,6 +8,12 @@
   <meta name="keywords" content="free online games, mini games, games to play when bored, reaction time game, memory game, rock paper scissors, number guessing game">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#101326">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Boredom Blitz">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icon.svg">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Boredom Blitz – Free Fun Mini Games Online">
   <meta property="og:description" content="Five quick games. Endless rematches. No account needed. Play free on any screen.">
@@ -196,6 +202,15 @@
   const today=new Date();$("daily-copy").textContent="Daily mission: beat your reaction time. Today's date: "+today.toLocaleDateString(undefined,{day:"numeric",month:"long"})+".";
   updateStats();
 })();
+</script>
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("./sw.js", { scope: "./" }).catch((error) => {
+        console.log("Offline app setup could not be registered.", error);
+      });
+    });
+  }
 </script>
 </body>
 </html>
