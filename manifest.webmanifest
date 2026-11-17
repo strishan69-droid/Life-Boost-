@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "LifeBoost — Build your best day",
+  "short_name": "LifeBoost",
+  "description": "Build healthy habits, track goals and grow one day at a time.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#07110d",
+  "theme_color": "#07110d",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
