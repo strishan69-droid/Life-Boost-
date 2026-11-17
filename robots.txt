@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://strishan69-droid.github.io/Life-Boost-/sitemap.xml
